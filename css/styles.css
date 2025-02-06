@@ -1,0 +1,370 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 12vh;
+}
+
+main {
+    margin-top: 12vh; /* Igual a la altura de la navbar */
+}
+
+section {
+    scroll-margin-top: 12vh; /* Ajusta según la altura del navbar */
+}
+
+/* Contenedor de la Navbar */
+.navbar {          
+    background-color: #f8f8f8; /* Color de fondo */
+    height: 12vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-logo img {
+    height: 55px; /* Ajusta el tamaño del logo */
+    width: auto;
+}
+
+/* Menú de navegación */
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* Espacio entre elementos del menú */
+}
+
+.navbar-link {
+    color: #222222; /* Color del texto */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link[aria-current="page"] {
+    color: #e0781d; /* Color al hacer hover o en la página activa */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo al hacer hover */
+    border-radius: 4px;
+}
+
+/* Botón de reserva */
+.navbar-button {
+    background-color: #e0781d; /* Color del botón */
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #2980b9; /* Color al hacer hover */
+}
+
+
+/*hero section*/
+.hero {
+    color: #fff;
+    padding: 4rem 2rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    background-image: url(../images/fondo.jpg);
+    background-position: center -90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #e0781d;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+/*Seccion de dato*/
+.dato {
+    background-color: white;
+    color: #2b2b2b;
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dato h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Sección de Servicios */
+.servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 1.5rem ;
+
+    background-image: url(../images/fondo3.jpg);
+    background-position: center -150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 88vh;
+}
+
+.servicios h2 {
+    font-size: 5vh;
+    margin: 0;
+    margin-bottom: 2.5rem;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.servicio {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    width: 20%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 50vh;
+}
+
+
+.servicio-img {
+    height:8rem;
+    width: 8rem;
+    margin: 0 auto;
+    border-radius: 10000px;
+    overflow: hidden;
+}
+
+
+.servicio-img img {
+    height: 8rem;
+    width: 0 auto;
+}
+
+.servicio-text{
+    margin-bottom: 2rem;  
+}
+
+.servicio-btn {
+    margin: auto;
+}
+
+/* ----------------------------------------------------Sección de nosotros */
+.nosotros {
+    background-color: #f8f8f8;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 4rem 1rem;
+}
+
+.nosotros h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+
+.nosotros-subcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+
+}
+
+.nosotros-texto {
+    background-color: #ece2d3;
+    border-radius: 15px;
+    width: 60%;
+    min-height: 20rem;
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+}
+.nosotros-texto h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.nosotros-texto p {
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.nosotros-video {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+/* -------------------------------------------------------Sección de Testimonios */
+/* .testimonios {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+} */
+
+/* Sección de Contacto */
+.contacto {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .navbar-actions {
+        margin-top: 1rem;
+    }
+}
+
+
+/* Estilo del contenedor del carrusel */
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+/* Estilo de las diapositivas */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  font-weight: bold;
+}

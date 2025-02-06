@@ -1,0 +1,88 @@
+/* Estilos generales */
+.testimonios {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f8f8;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonios-container {
+    width: 70%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.testimonio-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    min-width: 300px;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.testimonio-media img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonio-media video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+blockquote p {
+    font-style: italic;
+    color: #555;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Controles del carrusel */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.carrusel-btn.prev {
+    left: 1rem;
+}
+
+.carrusel-btn.next {
+    right: 1rem;
+}
+
+.carrusel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
