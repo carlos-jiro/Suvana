@@ -33,3 +33,16 @@ const swiper = new Swiper('.swiper', {
       draggable: true,
     },
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".navbar-link");
+
+    links.forEach(link => {
+        link.addEventListener("click", function () {
+            // Remueve aria-current de todos los enlaces
+            links.forEach(l => l.removeAttribute("aria-current"));
+            // Agrega aria-current solo al enlace actual
+            this.setAttribute("aria-current", "page");
+        });
+    });
+});

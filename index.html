@@ -7,9 +7,11 @@
     <meta name="keywords" content="masajes, relajación, bienestar, terapia, salud, spa">
     <meta name="author" content="Nombre de tu negocio">
     <title>Serenidad Masajes - Bienestar y Relajación</title> <!-- Título optimizado para SEO -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -26,16 +28,13 @@
                     <a href="#hero" class="navbar-link" role="menuitem" aria-current="page">Inicio</a>
                 </li>
                 <li role="none">
-                    <a href="#servicios" class="navbar-link" role="menuitem">Servicios</a>
+                    <a href="#servicios" class="navbar-link" role="menuitem" >Servicios</a>
                 </li>
                 <li role="none">
-                    <a href="#nosotros" class="navbar-link" role="menuitem">Nosotros</a>
+                    <a href="#nosotros" class="navbar-link" role="menuitem" >Nosotros</a>
                 </li>
-                <!-- <li role="none">
-                    <a href="/blog" class="navbar-link" role="menuitem">Blog</a>
-                </li> -->
                 <li role="none">
-                    <a href="#contacto" class="navbar-link" role="menuitem">Contacto</a>
+                    <a href="#contacto" class="navbar-link" role="menuitem" >Contacto</a>
                 </li>
             </ul>
 
@@ -57,7 +56,7 @@
         <section class="dato">
             <h2>¡$100 de descuento en el primer servicio!</h2>
         </section>
-    
+
         <!-- Sección de Servicios -->
         <section class="servicios" id="servicios">
             <h2>Nuestros Servicios</h2>
@@ -94,7 +93,7 @@
                 </article>
             </div>
         </section>
-    
+
         <!-- Sección de Nosotros -->
         <section class="nosotros" id="nosotros">
             <h1>Quienes somos</h1>
@@ -104,7 +103,7 @@
                         Imagina un momento de paz y tranquilidad donde el estrés desaparece y tu cuerpo se renueva. En AROMASSAGE, llevamos la experiencia de un spa profesional hasta la comodidad de tu hogar, brindándote masajes terapéuticos y aromaterapia diseñados para equilibrar cuerpo y mente.
                     </p>
                     <h3>🌿 ¿Por qué elegirnos?</h3>
-                    <p> 
+                    <p>
                         ✔️ Profesionales certificados en técnicas de relajación y masajes terapéuticos.<br/>
                         ✔️ Aromaterapia personalizada con aceites esenciales para potenciar tu bienestar.<br/>
                         ✔️ Servicio a domicilio, sin desplazamientos ni esperas.<br/>
@@ -131,7 +130,7 @@
                         <cite>- María González</cite>
                     </blockquote>
                 </div>
-        
+
                 <!-- Tarjeta 2 -->
                 <div class="testimonio-card">
                     <div class="testimonio-media">
@@ -145,7 +144,7 @@
                         <cite>- Juan Pérez</cite>
                     </blockquote>
                 </div>
-        
+
                 <!-- Tarjeta 3 -->
                 <div class="testimonio-card">
                     <div class="testimonio-media">
@@ -157,65 +156,48 @@
                     </blockquote>
                 </div>
             </div>
-        
+
             <!-- Controles del carrusel -->
             <button class="carrusel-btn prev">&#10094;</button>
             <button class="carrusel-btn next">&#10095;</button>
         </section>
-        
-        
-    
+
+
+
         <!-- Sección de Contacto -->
         <section class="contacto" id="contacto">
-            <h2>Contáctanos</h2>
-            <p>¿Listo para relajarte? ¡Escríbenos y agenda tu cita!</p>
-            <form action="/enviar" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-            <p>Ya sea que busques aliviar el estrés, reducir tensiones musculares o simplemente consentirte, estamos aquí para ti. Nuestro enfoque holístico garantiza que cada sesión sea más que un masaje: es un viaje hacia la armonía y el equilibrio.
-                <br/>
-                📍 Reserva tu sesión hoy mismo y déjanos cuidar de ti.<br/>
-                📲 Contáctanos por WhatsApp o llamada 📞 [Tu número]
-                <br/>
-                Tu bienestar comienza con una decisión. Elige relajarte. 🌿💆‍♀️</p>
+
+            <div class="contacto-texto">
+                <h3>Tu bienestar comienza con una decisión. Elige relajarte. 🌿</h3>
+            </div>
+
+            <div class="contacto-form">
+                <h2>Contáctanos</h2>
+                <div class="contacto-redes">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+                <p>¿Deseas <b>Promociones</b> y informacion relevante para tu salud? <br/>¡Registrate en nuestra Newsletter!</p>
+                <form action="/enviar" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </div>
+
         </section>
     </main>
 
-    <!-- Contenedor del carrusel -->
-    <div class="swiper">
-        <!-- Envoltorio de las diapositivas -->
-        <div class="swiper-wrapper">
-        <!-- Diapositiva 1 -->
-        <div class="swiper-slide">Slide 1</div>
-        <!-- Diapositiva 2 -->
-        <div class="swiper-slide">Slide 2</div>
-        <!-- Diapositiva 3 -->
-        <div class="swiper-slide">Slide 3</div>
-        </div>
-    
-        <!-- Paginación (opcional) -->
-        <div class="swiper-pagination"></div>
-    
-        <!-- Botones de navegación (opcional) -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    
-        <!-- Barra de desplazamiento (opcional) -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-
     <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2023 Serenidad Masajes. Todos los derechos reservados.</p>
+    <footer style="text-align: center;">
+        <p>&copy; 2023 Suvana Masajes. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
