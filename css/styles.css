@@ -48,7 +48,7 @@ section {
     align-items: center;
 }
 .navbar-logo img {
-    height: 55px; /* Ajusta el tamaño del logo */
+    height: 35px; /* Ajusta el tamaño del logo */
     width: auto;
 }
 
