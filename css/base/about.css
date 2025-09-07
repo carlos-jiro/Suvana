@@ -1,12 +1,13 @@
 /* ----------------------------------------------------Sección de nosotros */
 .nosotros {
-    background-color: #f8f8f8;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem 4rem 1rem;
+
+    width: 80%;
+    margin: 0 auto;
 }
 
 .nosotros h1 {
@@ -21,16 +22,21 @@
     justify-content: space-around;
     align-items: center;
     padding: 0;
+    margin-bottom: 4rem;
 
 }
 
 .nosotros-texto {
-    background-color: #ece2d3;
     border-radius: 15px;
     width: 60%;
     min-height: 20rem;
     box-sizing: border-box;
     padding: 1rem 3rem;
+}
+.nosotros-texto h1 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #e0781d;
 }
 .nosotros-texto h2 {
     margin: 0;
