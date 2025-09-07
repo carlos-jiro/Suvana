@@ -1,0 +1,75 @@
+/* Contenedor de la Navbar */
+.navbar {          
+    background-color: #f8f8f8; /* Color de fondo */
+    height: 12vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-logo img {
+    height: 35px; /* Ajusta el tamaño del logo */
+    width: auto;
+}
+
+/* Menú de navegación */
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* Espacio entre elementos del menú */
+}
+
+.navbar-link {
+    color: #222222; /* Color del texto */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link[aria-current="page"] {
+    color: #e0781d; /* Color al hacer hover o en la página activa */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo al hacer hover */
+    border-radius: 4px;
+}
+
+/* Botón de reserva */
+.navbar-button {
+    background-color: #e0781d; /* Color del botón */
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #2980b9; /* Color al hacer hover */
+}
