@@ -7,10 +7,10 @@
 
     padding: 1.5rem 0 2.5rem 0;
 
-    background-image: url(../../images/fondo3.jpg);
+    /* background-image: url(../../images/fondo3.jpg);
     background-position: center -150px;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: repeat; */
 
 }
 
@@ -18,7 +18,7 @@
     font-size: 5vh;
     margin: 0;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--suvana-color);
 }
 
 .servicios-container {
@@ -84,7 +84,7 @@ button.servicio-btn {
     cursor: pointer;
     width: 100%;
     margin: auto;
-    background-color: #2a9d8f;
+    background-color: var(--suvana-secondary-color);
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -97,7 +97,7 @@ button.servicio-btn {
 .servicio-btn {
     width: 100%;
     margin: auto;
-    background-color: #e0781d;
+    background-color: var(--suvana-color);
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;

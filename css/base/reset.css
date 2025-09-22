@@ -1,12 +1,22 @@
 
 /* Estilos generales */
+
+:root {
+    --suvana-color: #d78b30;
+    --suvana-secondary-color: #62683f;
+  }
+/*
+#e0781d
+*/
+
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     margin-top: 12vh;
-    background-color: #ecf0f1;
+    background-color: #fffdfa;
 }
 
 main {
