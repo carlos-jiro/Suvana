@@ -5,7 +5,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    padding: 1.5rem 0 2.5rem 0;
+    padding: 4rem 0 2.5rem 0;
 
     /* background-image: url(../../images/fondo3.jpg);
     background-position: center -150px;
@@ -15,10 +15,10 @@
 }
 
 .servicios h2 {
-    font-size: 5vh;
+    font-size: 3rem;
     margin: 0;
-    margin-bottom: 1rem;
-    color: var(--suvana-color);
+    margin-bottom: 4rem;
+    color: #e0781d;
 }
 
 .servicios-container {
@@ -29,7 +29,7 @@
 }
 /*---------------------------------------------------------------------- CARD*/
 .servicio {
-  background-color: #f4f4f4;
+  background-color: #f1f5f1;
   padding: 1rem;
   border-radius: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@ button.servicio-btn {
     cursor: pointer;
     width: 100%;
     margin: auto;
-    background-color: var(--suvana-secondary-color);
+    background-color: rgb(108, 163, 146);
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -144,4 +144,29 @@ button.servicio-btn {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* --- ESTILOS RESPONSIVE PARA SERVICIOS --- */
+
+/* Para tablets y dispositivos medianos (hasta 992px) */
+@media (max-width: 1250px) {
+  .servicios-container {
+    /* Aquí aplicamos las 2 columnas que pediste */
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; /* Reducimos un poco el espacio entre cards */
+  }
+}
+
+/* Para celulares (hasta 768px) */
+@media (max-width: 768px) {
+  .servicios h2 {
+    font-size: 2rem; /* Hacemos el título un poco más pequeño */
+  }
+
+  .servicios-container {
+    /* En pantallas muy pequeñas es mejor mostrar una sola columna */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem; /* Añadimos un poco de espacio a los lados */
+  }
 }

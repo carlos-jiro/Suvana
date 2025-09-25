@@ -58,9 +58,11 @@
     <main>
         <!-- Sección Hero (Principal) -->
         <section class="hero" id="hero">
-            <h1>Bienvenido a Serenidad Masajes</h1>
-            <p>Ofrecemos los mejores servicios de masajes para tu relajación y bienestar.</p>
-            <a href="/reservar" class="cta-button">Reserva Ahora</a>
+            <div class="heroText">
+                <h1>Bienvenido a SUVANA</h1>
+                <p>Ofrecemos los mejores servicios de masajes para tu relajación y bienestar.</p>
+                <a href="/reservar" class="cta-button">Reserva Ahora</a>
+            </div>
         </section>
 
         <section class="dato">
@@ -84,127 +86,8 @@
             </div>
         </section>
 
-        <!-- Sección de Nosotros -->
-        <section class="nosotros" id="nosotros">
-            <h1>Quienes somos</h1>
-            <div class="nosotros-subcontainer">
-                <div class="nosotros-texto">
-                    <h1>Una experiencia inolvidable</h1>
-                    <p>
-                        Imagina un momento de paz y tranquilidad donde el estrés desaparece y tu cuerpo se renueva. En SUVANA, llevamos la experiencia de un spa profesional hasta la comodidad de tu hogar, brindándote masajes terapéuticos y aromaterapia diseñados para equilibrar cuerpo y mente.
-                    </p>
-                    <h3>🌿 ¿Por qué elegirnos?</h3>
-                    <p>
-                        ✔️ Profesionales certificados en técnicas de relajación y masajes terapéuticos.<br/>
-                        ✔️ Aromaterapia personalizada con aceites esenciales para potenciar tu bienestar.<br/>
-                        ✔️ Servicio a domicilio, sin desplazamientos ni esperas.<br/>
-                        ✔️ Ambiente relajante, con música y esencias para una experiencia única.
-                    </p>
-                </div>
-                <div class="nosotros-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=51Vh1V8Cy5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="nosotros-subcontainer">
-                <div class="nosotros-video">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fOW8Y09GVek?si=ZPlgLTaB8pbjpjAO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="nosotros-texto">
-                    <h1>Renueva tu energía</h1>
-                    <p>
-                        Cada sesión está pensada para adaptarse a tus necesidades y 
-                        devolverte la vitalidad que mereces. Nuestros masajes combinan 
-                        técnicas tradicionales con un enfoque moderno que promueve 
-                        la circulación, alivia tensiones y mejora la calidad de tu descanso.
-                    </p>
-                    <h3>🌸 Beneficios de nuestros servicios</h3>
-                    <p>
-                        ✔️ Reducción del estrés y la ansiedad, logrando mayor claridad mental.<br/>
-                        ✔️ Mejora en la postura y en la flexibilidad muscular.<br/>
-                        ✔️ Estimulación de la energía vital para sentirte más activo durante el día.<br/>
-                        ✔️ Experiencia holística que conecta cuerpo, mente y emociones.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Sección de Testimonios -->
-        <section class="testimonios">
-            <h2>Lo que dicen nuestros clientes</h2>
-            <div class="testimonios-container">
-                <!-- Tarjeta 1 -->
-                <div class="testimonio-card">
-                    <div class="testimonio-media">
-                        <img src="images/cliente1.jpg" alt="Foto de María González">
-                    </div>
-                    <blockquote>
-                        <p>"El mejor masaje que he recibido en mi vida. ¡Totalmente recomendado!"</p>
-                        <cite>- María González</cite>
-                    </blockquote>
-                </div>
-
-                <!-- Tarjeta 2 -->
-                <div class="testimonio-card">
-                    <div class="testimonio-media">
-                        <video controls>
-                            <source src="videos/testimonio1.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                    </div>
-                    <blockquote>
-                        <p>"Increíble experiencia. Volveré pronto."</p>
-                        <cite>- Juan Pérez</cite>
-                    </blockquote>
-                </div>
-
-                <!-- Tarjeta 3 -->
-                <div class="testimonio-card">
-                    <div class="testimonio-media">
-                        <img src="images/cliente2.jpg" alt="Foto de Ana López">
-                    </div>
-                    <blockquote>
-                        <p>"Un lugar increíble para relajarse. ¡Lo amo!"</p>
-                        <cite>- Ana López</cite>
-                    </blockquote>
-                </div>
-            </div>
-
-            <!-- Controles del carrusel -->
-            <button class="carrusel-btn prev">&#10094;</button>
-            <button class="carrusel-btn next">&#10095;</button>
-        </section>
-
-
-
-        <!-- Sección de Contacto -->
-        <section class="contacto" id="contacto">
-
-            <div class="contacto-texto">
-                <h3>Tu bienestar comienza con una decisión. Elige relajarte. 🌿</h3>
-            </div>
-
-            <div class="contacto-form">
-                <h2>Contáctanos</h2>
-                <div class="contacto-redes">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-twitter"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-youtube"></i>
-                </div>
-                <p>¿Deseas <b>Promociones</b> y informacion relevante para tu salud? <br/>¡Registrate en nuestra Newsletter!</p>
-                <form action="/enviar" method="POST">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <button type="submit">Enviar</button>
-                </form>
-
-            </div>
-
-        </section>
+        
     </main>
 
     <!-- Pie de página -->
@@ -217,3 +100,4 @@
     <script src="js/navbar.js"></script>
 </body>
 </html>
+

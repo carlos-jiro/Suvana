@@ -16,7 +16,6 @@ body {
     line-height: 1.6;
     color: #333;
     margin-top: 12vh;
-    background-color: #fffdfa;
 }
 
 main {
@@ -25,6 +24,22 @@ main {
 
 section {
     scroll-margin-top: 12vh; /* Ajusta según la altura del navbar */
+}
+
+/* MEDIA QUERIES RESPONSIVE */
+@media screen and (max-width: 968px) {
+    
+  body {
+      margin-top: 9vh;
+  }
+
+  main {
+      margin-top: 9vh; /* Igual a la altura de la navbar */
+  }
+
+  section {
+      scroll-margin-top: 9vh; /* Ajusta según la altura del navbar */
+  }
 }
 
 
